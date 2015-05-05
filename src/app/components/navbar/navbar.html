@@ -1,0 +1,19 @@
+<md-toolbar layout-gt-lg="row" layout-align="center center" layout-align-gt-lg="space-around center" layout="column" ng-controller="NavbarCtrl">
+
+  <div flex-order-gt-md="1" flex-order-sm="1" layout-align="center">
+    <md-button class="logo"><i class="mdi mdi-eye"></i> MIRA</md-button>
+  </div>
+
+
+
+  <div flex-order-gt-md="2" layout="column" flex-order-sm="2" layout-align="center">
+    <md-button href="#">Days to end of sprint: 5</md-button>
+    <md-button href="#">Remaining Story Points: {{storyPoints}}</md-button>
+  </div>
+
+  <div flex-order-gt-md="3" flex-order-sm="3" layout-align="center">
+    <md-select ng-model="selectedTeam" placeholder="Select a team">
+      <md-option ng-selected="opt.selected" ng-value="opt" ng-repeat="opt in teams">{{ opt.name }}</md-option>
+    </md-select>
+  </div>
+</md-toolbar>

@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+
+html {
+  font-family: 'Source Sans Pro', serif;
+}
+
+body {
+  background-color: #517d91;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: #3E606F;
+  }
+}
+
+span a, a:visited {
+  color: #3E606F;
+}
+
+md-select {
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+md-select.md-default-theme:not([disabled]):focus .md-select-label {
+  color: #ffffff;
+}
+
+md-select.md-default-theme .md-select-label {
+  border-bottom-color: #999999;
+}
+
+.mdi {
+  font-size: 1.5em;
+  color: #999999;
+}
+
+.blocker {
+  color: #dc0000;
+}
+
+.not-started {
+  color: #e9a900;
+}
+
+.in-progress {
+  color: #40A1FF;
+}
+
+.completed {
+  color: #4EA654;
+}
+
+.pr-exists {
+  color: #1c7054;
+}
+
+.build-success {
+  color: #1c7054;
+}
+
+.build-failed {
+  color: #dc0000;
+}
+
+.logo {
+  font-size: 1.5em;
+  i {
+    font-size: 1em;
+  }
+}
+
+[layout=row] {
+  flex-direction: row;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 230px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+md-toolbar.md-default-theme {
+  background-color: #193441;
+}
+
+.techs {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #517d91;
+
+  md-card {
+    background-color: white;
+
+    .story-title {
+      height: 30px;
+      padding: 0 5px 0 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    p:nth-of-type(1) {
+      margin-top: 0px;
+      text-align: center;
+    }
+
+    .dependency {
+      text-align: center;
+
+      .mdi-arrow-down, .mdi-arrow-up {
+        font-size: 30px
+      }
+
+      span {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+
+    .person-icon {
+      margin-left: 5px;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+
+    .story-points {
+      display: block;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      color: white;
+      line-height: 16px;
+      text-align: center;
+      border-radius: 15px;
+      background-color: #3E606F;
+      border: 1px solid #3E606F;
+
+      span {
+        font-size: 1.3em;
+      }
+    }
+
+    h3 {
+      color: #3E606F;
+      margin-bottom: 5px;
+      text-align: center;
+
+      a {
+        color: #3E606F;
+      }
+    }
+
+    img.pull-right {
+      float: right;
+      width: 50px;
+    }
+  }
+}
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector

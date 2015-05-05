@@ -1,0 +1,344 @@
+[
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-1510",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-1510",
+    "title": "Add Banking Information",
+    "blocker": 5,
+    "notStarted": 10,
+    "inProgress": 4,
+    "completed": 2,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": true,
+      "on": true,
+      "by": false,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/NGEN-1709",
+      "storyTitle": "NGEN-1302"
+    },
+    "storyPoints": 5,
+    "assignees": ["M", "L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-4052",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-4052",
+    "title": "View Status Validation",
+    "blocker": 0,
+    "notStarted": 1,
+    "inProgress": 10,
+    "completed": 3,
+    "bamboo": true,
+    "prExists": false,
+    "dependency": {
+      "exists": true,
+      "on": false,
+      "by": true,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/NGEN-1709",
+      "storyTitle": "NGEN-1709"
+    },
+    "storyPoints": 2,
+    "assignees": ["M", "G", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-1709",
+    "title": "Add/Edit Signers",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-1709",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 0,
+    "completed": 15,
+    "bamboo": true,
+    "prExists": true,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 1,
+    "assignees": ["B", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-2824",
+    "title": "Contracts - Comment Type",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-2824",
+    "blocker": 2,
+    "notStarted": 5,
+    "inProgress": 3,
+    "completed": 0,
+    "bamboo": false,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 1,
+    "assignees": ["L"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-1010",
+    "title": "Contracts - Correct Foo Bar",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-4704",
+    "blocker": 4,
+    "notStarted": 0,
+    "inProgress": 3,
+    "completed": 1,
+    "bamboo": false,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 3,
+    "assignees": ["A", "M"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-4296",
+    "title": "Contracts Comments Bug",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-4296",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 0,
+    "bamboo": true,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 1,
+    "assignees": ["A", "M"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-1710",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-1710",
+    "title": "Application- Add Existing Contact",
+    "blocker": 5,
+    "notStarted": 10,
+    "inProgress": 4,
+    "completed": 2,
+    "bamboo": false,
+    "prExists": false,
+    "dependency": {
+      "exists": true,
+      "on": true,
+      "by": false,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/NGEN-1709",
+      "storyTitle": "NGEN-1302"
+    },
+    "storyPoints": 3,
+    "assignees": ["K", "L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-4052",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-4052",
+    "title": "Add Banking Information",
+    "blocker": 0,
+    "notStarted": 1,
+    "inProgress": 4,
+    "completed": 3,
+    "bamboo": true,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 2,
+    "assignees": ["A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-3311",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-3311",
+    "title": "Refactor contract_application.js",
+    "blocker": 0,
+    "notStarted": 2,
+    "bamboo": true,
+    "inProgress": 2,
+    "completed": 1,
+    "prExists": true,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 5,
+    "assignees": ["X", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-2950",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-2950",
+    "title": "Contract Service Needs Jasmine Unit Tests",
+    "blocker": 0,
+    "notStarted": 2,
+    "inProgress": 0,
+    "completed": 0,
+    "bamboo": false,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 3,
+    "assignees": ["M", "L", "C"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-3852",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-3852",
+    "title": "Add Banking Information",
+    "blocker": 5,
+    "notStarted": 10,
+    "inProgress": 4,
+    "completed": 2,
+    "bamboo": true,
+    "prExists": false,
+    "dependency": {
+      "exists": true,
+      "on": false,
+      "by": true,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/NGEN-3488",
+      "storyTitle": "NGEN-3488"
+    },
+    "storyPoints": 2,
+    "assignees": ["M", "L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-3257",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-3257",
+    "title": "Floor Plan - View Details",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 0,
+    "completed": 7,
+    "bamboo": true,
+    "prExists": true,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 2,
+    "assignees": ["M", "L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-3349",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-3349",
+    "title": "Create Leads Audit Table Trigger",
+    "blocker": 1,
+    "notStarted": 10,
+    "inProgress": 4,
+    "completed": 2,
+    "bamboo": false,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 2,
+    "assignees": ["M", "L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-3560",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-3560",
+    "title": "Create Persons Trigger to Update Audit Table",
+    "blocker": 0,
+    "notStarted": 3,
+    "inProgress": 5,
+    "completed": 2,
+    "bamboo": true,
+    "prExists": false,
+    "dependency": {
+      "exists": true,
+      "on": false,
+      "by": true,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/NGEN-2899",
+      "storyTitle": "NGEN-2899"
+    },
+    "storyPoints": 5,
+    "assignees": ["M"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-60",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-60",
+    "title": "Enhance Date Picker Validation",
+    "blocker": 0,
+    "notStarted": 10,
+    "inProgress": 0,
+    "completed": 0,
+    "bamboo": false,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 3,
+    "assignees": ["M", "L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-2924",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-2924",
+    "title": "Fix Legal Sorting",
+    "blocker": 0,
+    "notStarted": 4,
+    "inProgress": 1,
+    "completed": 0,
+    "bamboo": true,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 3,
+    "assignees": ["L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-3488",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-3488",
+    "title": "Create a Lead via Mobile Device",
+    "blocker": 1,
+    "notStarted": 2,
+    "inProgress": 5,
+    "completed": 2,
+    "bamboo": true,
+    "prExists": false,
+    "dependency": {
+      "exists": true,
+      "on": true,
+      "by": false,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/NGEN-1710",
+      "storyTitle": "NGEN-1710"
+    },
+    "storyPoints": 3,
+    "assignees": ["M", "L", "A"]
+  },
+  {
+    "teamName": "HoneyBadgers",
+    "storyNumber": "NGEN-3124",
+    "url": "https://tardis.discoverdsc.com/browse/NGEN-3124",
+    "title": "Make Awesome JIRA Review Board Called MIRA",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 0,
+    "completed": 9,
+    "bamboo": true,
+    "prExists": true,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/NGEN-1709"
+    },
+    "storyPoints": 2,
+    "assignees": ["M", "L", "A"]
+  }
+]

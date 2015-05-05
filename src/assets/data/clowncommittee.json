@@ -1,0 +1,282 @@
+[
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-156",
+    "url": "https://tardis.discoverdsc.com/browse/TM-156",
+    "title": "[Manager] Escalate title priority",
+    "blocker": 1,
+    "notStarted": 2,
+    "inProgress": 3,
+    "completed": 4,
+    "prExists": false,
+    "dependency": {
+      "exists": true,
+      "on": true,
+      "by": false,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/TM-1709",
+      "storyTitle": "TM-1709"
+    },
+    "storyPoints": 2,
+    "assignees": [
+      "M",
+      "L",
+      "A"
+    ],
+    "bamboo": false
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1654",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1654",
+    "title": "[Manager] Time in queue filter for grid",
+    "blocker": 0,
+    "notStarted": 1,
+    "inProgress": 10,
+    "completed": 3,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "on": false,
+      "by": true,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/TM-1701",
+      "storyTitle": "TM-1701"
+    },
+    "storyPoints": 1,
+    "assignees": [
+      "M",
+      "G"
+    ],
+    "bamboo": true
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1655",
+    "title": "[Manager] Title Image modal for Title Details",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1655",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 0,
+    "completed": 6,
+    "prExists": true,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 1,
+    "assignees": [
+      "B",
+      "A"
+    ],
+    "bamboo": true
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1652",
+    "title": "[Technical] Days in Queue for Grid",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1652",
+    "blocker": 2,
+    "notStarted": 5,
+    "inProgress": 3,
+    "completed": 0,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 2,
+    "assignees": ["L"],
+    "bamboo": false
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1653",
+    "title": "[Technical] Date in Queue value to database",
+    "blocker": 0,
+    "notStarted": 1,
+    "inProgress": 3,
+    "completed": 1,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 2,
+    "assignees": [
+      "A",
+      "M"
+    ],
+    "bamboo": true
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1029",
+    "title": "[Manager] Work Records in Queue",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1029",
+    "blocker": 0,
+    "notStarted": 2,
+    "inProgress": 1,
+    "completed": 3,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 5,
+    "assignees": [
+      "A",
+      "M"
+    ],
+    "bamboo": false
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1732",
+    "title": "[Manager] Work Records in Queue",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1732",
+    "blocker": 0,
+    "notStarted": 2,
+    "inProgress": 1,
+    "completed": 3,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 5,
+    "assignees": [
+      "A",
+      "M"
+    ],
+    "bamboo": true
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1256",
+    "title": "[Bug] Work in Queue link in Title Search Page is not functional",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1256",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 1,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 1,
+    "assignees": [
+      "D"
+    ],
+    "bamboo": false
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1803",
+    "title": "PI1 - Add Place Id to Address Table",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1803",
+    "blocker": 1,
+    "notStarted": 1,
+    "inProgress": 0,
+    "completed": 2,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 1,
+    "assignees": [
+      "M"
+    ],
+    "bamboo": false
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1706",
+    "title": "PI1 - [Technical] Enhance padding on all screens",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1706",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 0,
+    "completed": 2,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 2,
+    "assignees": [
+      "M"
+    ],
+    "bamboo": true
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1825",
+    "title": "Client Code Reorg",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1825",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 0,
+    "completed": 5,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 2,
+    "assignees": [
+      "M",
+      "D"
+    ],
+    "bamboo": true
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1613",
+    "title": "Create E2E tests to add/edit Regions",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1613",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 0,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 3,
+    "assignees": [
+      "L"
+    ],
+    "bamboo": true
+  },
+  {
+    "teamName": "ClownCommittee",
+    "storyNumber": "TM-1942",
+    "title": "[Bug]:Managers not able to escalate the priority for the titles in the reassignment queue.",
+    "url": "https://tardis.discoverdsc.com/browse/TM-1942",
+    "blocker": 0,
+    "notStarted": 1,
+    "inProgress": 0,
+    "completed": 0,
+    "prExists": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 1,
+    "assignees": [
+      "C"
+    ],
+    "bamboo": true
+  }
+]

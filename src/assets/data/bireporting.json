@@ -1,0 +1,154 @@
+[
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-1415",
+    "url": "https://tardis.discoverdsc.com/browse/BI-1415",
+    "title": "Title Location and Status Management Report (IT Prio. # 177)",
+    "blocker": 0,
+    "notStarted": 1,
+    "inProgress": 0,
+    "completed": 0,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": false,
+      "on": false,
+      "by": false
+    },
+    "storyPoints": 2,
+    "assignees": ["M"]
+  },
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-1947",
+    "url": "https://tardis.discoverdsc.com/browse/BI-1947",
+    "title": "Create New Manufacturer Aging Report - Dealer Portal",
+    "blocker": 1,
+    "notStarted": 0,
+    "inProgress": 0,
+    "completed": 0,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": true,
+      "on": true,
+      "by": false,
+      "storyUrl": "https://tardis.discoverdsc.com/browse/MNGW-3846",
+      "storyTitle": "MNGW-3846"
+    },
+    "storyPoints": 2,
+    "assignees": ["M"]
+  },
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-1648",
+    "title": "Time to Shift:  Add Lot Number to Missing BOS report (IT Prior. #275) ",
+    "url": "https://tardis.discoverdsc.com/browse/BI-1658",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 0,
+    "prExists": true,
+    "bamboo": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 1,
+    "assignees": ["M"]
+  },
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-2042",
+    "title": "Update Defaults By Dealer Report - Add Month Paid In Full Column (IT Prior. #353)",
+    "url": "https://tardis.discoverdsc.com/browse/BI-2042",
+    "blocker": 0,
+    "notStarted": 1,
+    "inProgress": 0,
+    "completed": 0,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": ""
+    },
+    "storyPoints": 1,
+    "assignees": ["J"]
+  },
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-1602",
+    "title": "Effective APR by Floorplan Report",
+    "url": "https://tardis.discoverdsc.com/browse/BI-1602",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 0,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 3,
+    "assignees": ["B"]
+  },
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-1997",
+    "title": "Update AE Performance Matrix - Add Canada Division AE's",
+    "url": "https://tardis.discoverdsc.com/browse/BI-1997",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 0,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 1,
+    "assignees": ["G"]
+  },
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-1818",
+    "title": "Revise Tables Used for Motions for Default Judgements Data Report",
+    "url": "https://tardis.discoverdsc.com/browse/BI-1818",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 0,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 3,
+    "assignees": ["G"]
+  },
+  {
+    "teamName": "BI-Reporting",
+    "storyNumber": "BI-1208",
+    "title": "Weekly Extract of Data needed for Line Mods (IT Prio. # 232)",
+    "url": "https://tardis.discoverdsc.com/browse/BI-1208",
+    "blocker": 0,
+    "notStarted": 0,
+    "inProgress": 1,
+    "completed": 0,
+    "prExists": false,
+    "bamboo": false,
+    "dependency": {
+      "exists": false,
+      "storyUrl": "",
+      "storyTitle": ""
+    },
+    "storyPoints": 10,
+    "assignees": ["G"]
+  }
+]

@@ -1,0 +1,58 @@
+<div layout="row" layout-sm="column" layout-fill>
+
+  <md-content layout-fill>
+    <header ng-include="'app/components/navbar/navbar.html'"></header>
+    <div class="techs" layout-align="center center">
+      <md-card flex="15" flex-sm="90" flex-lg="30" flex-md="40" ng-repeat="awesomeThing in awesomeThings">
+        <div class="thumbnail">
+            <h3><a href="{{awesomeThing.url}}" target="_blank" ng-bind="awesomeThing.storyNumber"></a></h3>
+            <p class="story-title" ng-bind="awesomeThing.title"></p>
+            <div layout="row" layout-align="space-around start">
+              <div layout="column">
+                <div>
+                  <i class="mdi mdi-alert-octagon" ng-class="{'blocker': (awesomeThing.blocker > 0)}"></i> <span ng-bind="awesomeThing.blocker"></span>
+                </div>
+                <div>
+                  <i class="mdi mdi-human" ng-class="{'not-started': (awesomeThing.notStarted > 0)}"></i> <span ng-bind="awesomeThing.notStarted"></span>
+                </div>
+                <div>
+                  <i class="mdi mdi-bike" ng-class="{'in-progress': (awesomeThing.inProgress> 0)}"></i> <span ng-bind="awesomeThing.inProgress"></span>
+                </div>
+              </div>
+              <div class="dependency"  layout="column" ng-if="awesomeThing.dependency.exists">
+                <i class="mdi" ng-class="{'mdi-arrow-up': awesomeThing.dependency.by, 'mdi-arrow-down': awesomeThing.dependency.on}"></i>
+                <span>
+                  <a target="_blank" href="{{awesomeThing.dependency.storyUrl}}" ng-bind="awesomeThing.dependency.storyTitle"></a>
+                </span>
+              </div>
+              <div layout="column">
+                <div>
+                  <i class="mdi mdi-hotel" ng-class="{'completed': (awesomeThing.completed> 0)}"></i> <span ng-bind="awesomeThing.completed"></span>
+                </div>
+                <div>
+                  <i class="mdi mdi-account-multiple" ng-class="{'pr-exists': awesomeThing.prExists}"></i>
+                </div>
+                <div>
+                  <i class="mdi mdi-sync" ng-class="awesomeThing.bamboo ? 'build-success' : 'build-failed'"></i>
+                </div>
+              </div>
+            </div>
+          <hr/>
+          <div layout="row" layout-align="space-between center" layout-margin>
+            <div layout="row">
+              <div class="person-icon" ng-repeat="person in awesomeThing.assignees">
+                <span ng-bind="person"></span>
+              </div>
+            </div>
+            <div>
+              <div class="story-points">
+                <span ng-bind="awesomeThing.storyPoints"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </md-card>
+    </div>
+  </md-content>
+
+</div>
