@@ -1,15 +1,33 @@
+(function() {
 'use strict';
 
-angular.module('mira')
- .service('teamService', function() {
-   var team = 'honeybadgers';
+function teamService($http, $q) {
+  var team = 'honeybadgers';
 
-   return {
+  return {
     getTeam: function() {
-     return team;
+      return team;
     },
-    setTeam: function(teamName){
+    setTeam: function(teamName) {
       team = teamName;
+    },
+    getInformation: function(team) {
+      var deferred = $q.defer();
+      $http.get('assets/data/' + team + '.json')
+        .success(function(data) {
+          return deferred.resolve(data);
+        })
+        .error(function() {
+          return deferred.reject();
+        });
+
+      return deferred.promise;
     }
-   };
-  });
+  };
+}
+
+angular.module('mira')
+ .factory('teamService', teamService);
+
+teamService.$inject = ['$http', '$q'];
+})();

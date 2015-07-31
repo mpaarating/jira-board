@@ -7,7 +7,7 @@ var $ = require('gulp-load-plugins')({
 });
 
 module.exports = function(options) {
-  gulp.task('partials', function () {
+  gulp.task('partials', function() {
     return gulp.src([
       options.src + '/app/**/*.html',
       options.tmp + '/serve/app/**/*.html'
@@ -24,8 +24,9 @@ module.exports = function(options) {
       .pipe(gulp.dest(options.tmp + '/partials/'));
   });
 
-  gulp.task('html', ['inject', 'partials'], function () {
-    var partialsInjectFile = gulp.src(options.tmp + '/partials/templateCacheHtml.js', { read: false });
+  gulp.task('html', ['inject', 'partials'], function() {
+    var partialsInjectFile = gulp.src(options.tmp +
+      '/partials/templateCacheHtml.js', {read: false});
     var partialsInjectOptions = {
       starttag: '<!-- inject:partials -->',
       ignorePath: options.tmp + '/partials',
@@ -43,7 +44,8 @@ module.exports = function(options) {
       .pipe($.rev())
       .pipe(jsFilter)
       .pipe($.ngAnnotate())
-      .pipe($.uglify({ preserveComments: $.uglifySaveLicense })).on('error', options.errorHandler('Uglify'))
+      .pipe($.uglify({preserveComments: $.uglifySaveLicense}))
+        .on('error', options.errorHandler('Uglify'))
       .pipe(jsFilter.restore())
       .pipe(cssFilter)
       .pipe($.csso())
@@ -60,19 +62,19 @@ module.exports = function(options) {
       }))
       .pipe(htmlFilter.restore())
       .pipe(gulp.dest(options.dist + '/'))
-      .pipe($.size({ title: options.dist + '/', showFiles: true }));
+      .pipe($.size({title: options.dist + '/', showFiles: true}));
   });
 
   // Only applies for fonts from bower dependencies
   // Custom fonts are handled by the "other" task
-  gulp.task('fonts', function () {
+  gulp.task('fonts', function() {
     return gulp.src($.mainBowerFiles())
       .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
       .pipe($.flatten())
       .pipe(gulp.dest(options.dist + '/fonts/'));
   });
 
-  gulp.task('other', function () {
+  gulp.task('other', function() {
     return gulp.src([
       options.src + '/**/*',
       '!' + options.src + '/**/*.{html,css,js,scss}'
@@ -80,7 +82,7 @@ module.exports = function(options) {
       .pipe(gulp.dest(options.dist + '/'));
   });
 
-  gulp.task('clean', function (done) {
+  gulp.task('clean', function(done) {
     $.del([options.dist + '/', options.tmp + '/'], done);
   });
 

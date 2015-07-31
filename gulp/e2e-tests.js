@@ -12,17 +12,17 @@ module.exports = function(options) {
 
   gulp.task('webdriver-standalone', $.protractor.webdriver_standalone);
 
-  function runProtractor (done) {
+  function runProtractor(done) {
 
     gulp.src(options.e2e + '/**/*.js')
       .pipe($.protractor.protractor({
         configFile: 'protractor.conf.js'
       }))
-      .on('error', function (err) {
+      .on('error', function(err) {
         // Make sure failed tests cause gulp to exit non-zero
         throw err;
       })
-      .on('end', function () {
+      .on('end', function() {
         // Close browser sync server
         browserSync.exit();
         done();
@@ -31,5 +31,8 @@ module.exports = function(options) {
 
   gulp.task('protractor', ['protractor:src']);
   gulp.task('protractor:src', ['serve:e2e', 'webdriver-update'], runProtractor);
-  gulp.task('protractor:dist', ['serve:e2e-dist', 'webdriver-update'], runProtractor);
+  gulp.task('protractor:dist',
+    ['serve:e2e-dist', 'webdriver-update'],
+    runProtractor
+  );
 };

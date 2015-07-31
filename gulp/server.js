@@ -14,7 +14,8 @@ module.exports = function(options) {
     browser = browser === undefined ? 'default' : browser;
 
     var routes = null;
-    if(baseDir === options.src || (util.isArray(baseDir) && baseDir.indexOf(options.src) !== -1)) {
+    if (baseDir === options.src ||
+      (util.isArray(baseDir) && baseDir.indexOf(options.src) !== -1)) {
       routes = {
         '/bower_components': 'bower_components'
       };
@@ -25,7 +26,7 @@ module.exports = function(options) {
       routes: routes
     };
 
-    if(middleware.length > 0) {
+    if (middleware.length > 0) {
       server.middleware = middleware;
     }
 
@@ -40,19 +41,19 @@ module.exports = function(options) {
     selector: '[ng-app]'// Only needed for angular apps
   }));
 
-  gulp.task('serve', ['watch'], function () {
+  gulp.task('serve', ['watch'], function() {
     browserSyncInit([options.tmp + '/serve', options.src]);
   });
 
-  gulp.task('serve:dist', ['build'], function () {
+  gulp.task('serve:dist', ['build'], function() {
     browserSyncInit(options.dist);
   });
 
-  gulp.task('serve:e2e', ['inject'], function () {
+  gulp.task('serve:e2e', ['inject'], function() {
     browserSyncInit([options.tmp + '/serve', options.src], []);
   });
 
-  gulp.task('serve:e2e-dist', ['build'], function () {
+  gulp.task('serve:e2e-dist', ['build'], function() {
     browserSyncInit(options.dist, []);
   });
 };

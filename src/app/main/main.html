@@ -1,9 +1,8 @@
 <div layout="row" layout-sm="column" layout-fill>
-
   <md-content layout-fill>
     <header ng-include="'app/components/navbar/navbar.html'"></header>
     <div class="techs" layout-align="center center">
-      <md-card flex="15" flex-sm="90" flex-lg="30" flex-md="40" ng-repeat="awesomeThing in awesomeThings">
+      <md-card flex="15" flex-sm="90" flex-lg="30" flex-md="40" ng-repeat="awesomeThing in MainCtrl.awesomeThings">
         <div class="thumbnail">
             <h3><a href="{{awesomeThing.url}}" target="_blank" ng-bind="awesomeThing.storyNumber"></a></h3>
             <p class="story-title" ng-bind="awesomeThing.title"></p>
@@ -54,5 +53,4 @@
       </md-card>
     </div>
   </md-content>
-
 </div>
